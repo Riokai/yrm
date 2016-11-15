@@ -52,7 +52,7 @@ function onUse(name) {
 
       getCurrentRegistry(function (current) {
         printMsg([
-          '', '   Registry has been set to: ' + current, ''
+          '', '   Yarn registry has been set to: ' + current, ''
         ])
       })
     })
@@ -75,7 +75,7 @@ function showCurrent() {
   getCurrentRegistry(function(cur) {
     const allResource = getAllRegistry()
     Object.keys(allResource).forEach(function(key) {
-      var item = allResource[key]
+      const item = allResource[key]
       if (item.registry.replace(/\//g, '') === cur.replace(/\//g, '')) {
         printMsg([key])
         return
@@ -133,8 +133,8 @@ function onTest(registry) {
       getCurrentRegistry(function(cur) {
           const msg = ['']
           results.forEach(function(result) {
-              var prefix = result.registry === cur ? '* ' : '  '
-              var suffix = result.error ? 'Fetch Error' : result.time + 'ms'
+              const prefix = result.registry === cur ? '* ' : '  '
+              const suffix = result.error ? 'Fetch Error' : result.time + 'ms'
               msg.push(prefix + result.name + line(result.name, 8) + suffix)
           })
           msg.push('')
@@ -159,6 +159,6 @@ function printErr(err) {
 }
 
 function line(str, len) {
-    var line = new Array(Math.max(1, len - str.length)).join('-')
-    return ' ' + line + ' '
+    const line = new Array(Math.max(1, len - str.length)).join('-')
+    return ` ${line} `
 }
