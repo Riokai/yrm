@@ -7,7 +7,6 @@ const async = require('async')
 const resource = require('./resource.json')
 const pkg = require('./package.json')
 
-
 program
   .version(pkg.version)
 
