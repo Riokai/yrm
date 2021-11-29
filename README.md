@@ -18,7 +18,7 @@ $ yrm ls
 
 * npm -----  https://registry.npmjs.org/
   cnpm ----  http://r.cnpmjs.org/
-  taobao --  https://registry.npm.taobao.org/
+  taobao --  https://registry.npmmirror.com/
   nj ------  https://registry.nodejitsu.com/
   rednpm -- http://registry.mirror.cqupt.edu.cn
   skimdb -- https://skimdb.npmjs.com/registry
@@ -55,7 +55,7 @@ Usage: yrm [options] [command]
 * [npm](https://www.npmjs.org)
 * [cnpm](http://cnpmjs.org)
 * [nodejitsu](https://www.nodejitsu.com)
-* [taobao](http://npm.taobao.org/)
+* [taobao](https://npmmirror.com)
 * [rednpm](http://npm.mirror.cqupt.edu.cn)
 
 
